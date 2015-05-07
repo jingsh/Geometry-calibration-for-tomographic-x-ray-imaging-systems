@@ -10,7 +10,6 @@
 /*****************************************************************/
 
 (function () {
-
   function LoadMathJax() {
     if (!window.MathJax) {
       if (document.body.innerHTML.match(/$|\\\[|\\\(|<([a-z]+:)math/)) {
@@ -27,7 +26,6 @@
       }
     }
   };
-
   var script = document.createElement("script");
   script.type = "text/javascript";
   script.text = "(" + LoadMathJax + ")()";
@@ -36,7 +34,6 @@
     parent.appendChild(script);
     parent.removeChild(script);
   },0);
-
 })();</script>
 
 # Geometry-calibration-for-tomographic-x-ray-imaging-systems
@@ -48,6 +45,6 @@ The methods and algorithm are inspired by Li, Xinhua, Da Zhang, and Bob Liu. ["A
 Drag the function file into your project and/or add it to your matlab function search path. 
 
 ## How to use?
-The function will output three values corresponding to the x-ray focal spot positions $$x$$, $$y$$, and $$z$$ in the detector coordinate system.
+The function will output three values corresponding to the x-ray focal spot positions x, y, and z in the detector coordinate system.
 
 
