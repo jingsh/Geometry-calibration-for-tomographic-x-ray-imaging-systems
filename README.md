@@ -35,6 +35,7 @@ If you want to batch process the whole sequence, you can loop through the projec
 
 ```matlab
 load('feature3D.mat');
+pixel_size = yourImagePixelSizeInMilimeters;
 N = numel(imageSequence);
 Location = zeros(N,3);
 for i = 1:N
@@ -42,6 +43,8 @@ for i = 1:N
     feature2D = yourAlgorithmToFind2DFeatures(image); %% Implement your own methods to locate the features here.
     Location(i,:) = solveGeo(feature3D,feature2D);
 end
+%% to convert values into mm
+Location = Location * pixel_size;
 ```
 
 ##Reference
