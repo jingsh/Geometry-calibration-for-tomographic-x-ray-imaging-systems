@@ -9,10 +9,13 @@ An Matlab implementation for geometry calibration of an x-ray imaging system.
 
 The methods and algorithm are inspired by Li, Xinhua, Da Zhang, and Bob Liu. ["A generic geometric calibration method for tomographic imaging systems with flat-panel detectors—A detailed implementation guide."](http://scitation.aip.org/content/aapm/journal/medphys/37/7/10.1118/1.3431996) Medical physics 37, 7 (2010): 3844-3854.
 
+<<<<<<< Updated upstream
 ## How to install?
 Drag the function file into your project and/or add it to your matlab function search path. 
 
 ## How to use?
 The function will output three values corresponding to the x-ray focal spot positions x, y, and z in the detector coordinate system.
 
+=======
+>>>>>>> Stashed changes
 
